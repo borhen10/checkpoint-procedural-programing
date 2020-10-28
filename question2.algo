@@ -1,0 +1,16 @@
+ALGORITHM dot_pr
+VAR
+    v1,v2 : ARRAY_OF INTEGER [];
+    ps : INTEGER;
+BEGIN
+    n1 := read_size();
+    read_array(n1,v1); 
+    n2 := read_size();
+    read_array(n2,v2);
+    dot_product(v1,v2,ps);
+    IF (ps = 0) THEN
+        Write("V1 and V2 are orthogonal");
+    ELSE
+        Write("V1 and V2 are not orthogonal");
+    END_IF
+END
